@@ -3,7 +3,7 @@
     header { background: #fff; box-shadow: 0 2px 8px #eee; padding: 0.5em 0; }
     .logo { font-size: 2.2em; font-weight: bold; letter-spacing: 0.1em; margin-left: 1em;  color: #2060b4; display: inline-block; padding-top: 8px;}
     .logo span { color: red; }
-    .logo a { text-decoration: none; }
+    .clickable{text-decoration: none;}
     nav { float: right; margin-right: 2em; }
     nav ul { list-style: none; margin: 5px,0,0,0; padding:0,0; display: flex; }
     nav li { margin: 0 1em; }
