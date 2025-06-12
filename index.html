@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EMAAR Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="emaar.css">
+  <script>
+    function switchLang(lang) {
+      document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      document.getElementById('en-content').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('ar-content').style.display = lang === 'ar' ? 'block' : 'none';
+    }
+    window.onload = function() { switchLang('en'); }
+  </script>
+</head>
+<body>
+  <header class="only-english">
+    <div class="logo">EM<span>A</span>AR</div>
+    <div class="lang-switch">
+     <button class="btn" onclick="switchLang('en')">En</button>
+      <button class="btn" onclick="switchLang('ar')">Ar</button>
+    </div id="en-content" >
+     <button class="hamburger" aria-label="Menu" onclick="toggleMenu(this)">
+  <span></span><span></span><span></span>
+</button>
+    <nav class="main-nav">
+      <button class="close-menu" aria-label="Close Menu" onclick="closeMenu(this)">×</button>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#org">Organization</a></li>
+        <li><a href="#values">Values</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="clear:both"></div>
+  </header>
+  
+  <!-- English Content -->
+  <div id="en-content">
+    <div class="container">
+      <section class="hero">
+        <h1>We are proud to achieve a distinguished status in the field of contracting and supplies that allow us to contribute in building our beloved company.</h1>
+      </section>
+
+      <h2 id="about">About EMAAR</h2>
+      <p>
+        EMAAR company provides many contracting, supplies, maintenance, logistical and operation services through professional experts and workers with the highest level of competence and experience.
+      </p>
+      <div class="qualities">
+        <div>Client satisfaction with services</div>
+        <div>High security</div>
+        <div>Permanent inspection</div>
+      </div>
+
+      <h2 id="services">Our Services</h2>
+      <div class="services-list">
+        <div>
+          <strong>Infrastructural Work</strong>
+          <ul>
+            <li>Water and wastewater</li>
+            <li>Excavation and filling</li>
+            <li>Roads and paving</li>
+            <li>Pylons for lighting and monitoring cameras</li>
+            <li>Pitching and lining concrete</li>
+            <li>Piles</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Supplying and Logistics</strong>
+          <ul>
+            <li>Pumps and submerged pumps</li>
+            <li>Safety equipment</li>
+            <li>Gravel and sand</li>
+            <li>Stones</li>
+            <li>Valves</li>
+            <li>All types of mechanical tools and equipment</li>
+            <li>Electrical generators, tools and cables</li>
+            <li>Pipes and fittings</li>
+            <li>Any other needed equipment for civil work</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Construction</strong>
+          <ul>
+            <li>Buildings</li>
+            <li>Fences</li>
+            <li>Houses and Villas</li>
+            <li>Finishing all types of construction work</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Heavy Equipment Rental</strong>
+          <ul>
+            <li>Bulldozer</li>
+            <li>Compactor</li>
+            <li>Drum Roller</li>
+            <li>Dump truck</li>
+            <li>Excavator</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 id="projects">Some of Our Previous Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="images/port-said-station.jpg" alt="East Port Said Power Station">
+          <strong>East Port Said Power Station</strong><br>
+          Total cost: 20,235,345 LE<br>
+          Main contractor: GeOcean (French Co.)<br>
+          <em>Supplies, Excavation, Pipe fitting, Equipment rental</em>
+        </div>
+        <div class="project-card">
+          <img src="images/control-building.jpg" alt="Control Building">
+          <strong>Control Building</strong><br>
+          Total cost: 9,450,000 LE<br>
+          Main contractor: Egyptian Maintenance Co.<br>
+        </div>
+        <div class="project-card">
+          <img src="images/Pipeline-Rehabilitation-L1.jpg" alt="Pipeline Rehabilitation L1">
+          <strong>First Phase Pipe Trench Rehabilitation</strong><br>
+          Total cost: 21,500,000 LE<br>
+          Main contractor: Egyptian Maintenance Co.<br>
+        </div>
+        <div class="project-card">
+          <img src="images/Pipeline-Rehabilitation-L3.jpg" alt="Pipeline Rehabilitation L3">
+          <strong>Third Phase Pipe Trench Rehabilitation</strong><br>
+          Total cost: 10,714,831 LE<br>
+          Main contractor: Egyptian Maintenance Co.<br>
+        </div>
+        <div class="project-card">
+          <img src="images/GENERAL-adminstartion.jpg" alt="General Administration Building">
+          <strong>General Administration Building</strong><br>
+          Total cost: 6,158,213 LE<br>
+          Main contractor: Egyptian Maintenance Co.<br>
+        </div>
+      </div>
+
+      <h2 id="org">Organization Chart</h2>
+      <div class="org-chart">
+        <img src="images/organization-hierarchy.png" alt="Organization Chart">
+      </div>
+
+      <h2 id="values">Our Values</h2>
+      <div class="values">
+        <div>Transparency</div>
+        <div>Respect of time</div>
+        <div>Work as a team</div>
+        <div>Perseverance</div>
+        <div>Creativity and innovation</div>
+      </div>
+
+      <h2 id="contact">Contact Us</h2>
+      
+      <form
+  action="https://formspree.io/f/xjkrwvyj"
+  method="POST"
+>
+  <label>
+    <input type="email" name="email" placeholder="your email">
+  </label>
+  <label>
+    <textarea name="message" placeholder="your message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+    </div>
+    <div class="footer">
+      &copy; 2025 EMAAR. All rights reserved.
+    </div>
+  </div>
+
+  <!-- Arabic Content -->
+    <header class="only-arabic">
+    <div class="logo">EM<span>A</span>AR</div>
+    <div class="lang-switch">
+      <button class="btn1" onclick="switchLang('en')">En</button>
+      <button class="btn1" onclick="switchLang('ar')">Ar</button>
+    </div id="ar-content">
+     <button class="hamburger" aria-label="Menu" onclick="toggleMenu(this)">
+  <span></span><span></span><span></span>
+</button>
+    <nav class="main-nav">
+      <button class="close-menu" aria-label="Close Menu" onclick="closeMenu(this)">×</button>
+      <ul>
+        <li><a href="#about-ar">About</a></li>
+        <li><a href="#services-ar">Services</a></li>
+        <li><a href="#projects-ar">Projects</a></li>
+        <li><a href="#org-ar">Organization</a></li>
+        <li><a href="#values-ar">Values</a></li>
+        <li><a href="#contact-ar">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="clear:both"></div>
+  </header>
+  <div id="ar-content" style="display:none">
+    <div class="container">
+      <section class="hero">
+        <h1>نحن فخورون بتحقيق مكانة متميزة في مجال المقاولات والتوريدات تتيح لنا المساهمة في بناء شركتنا الحبيبة.</h1>
+      </section>
+
+      <h2 id="about-ar">عن إعمار</h2>
+      <p>
+        تقدم شركة إعمار العديد من خدمات المقاولات والتوريدات والصيانة والخدمات اللوجستية والتشغيل من خلال خبراء محترفين وعمال ذوي كفاءة وخبرة عالية.
+      </p>
+      <div class="qualities">
+        <div>رضا العملاء عن الخدمات</div>
+        <div>أمان عالي</div>
+        <div>تفتيش دائم</div>
+      </div>
+
+      <h2 id="services-ar">خدماتنا</h2>
+      <div class="services-list">
+        <div>
+          <strong>الأعمال التحتية</strong>
+          <ul>
+            <li>مياه وصرف صحي</li>
+            <li>حفر وردم</li>
+            <li>طرق ورصف</li>
+            <li>أعمدة إنارة وكاميرات مراقبة</li>
+            <li>تبطين وصب خرسانة</li>
+            <li>خوازيق</li>
+          </ul>
+        </div>
+        <div>
+          <strong>التوريدات والخدمات اللوجستية</strong>
+          <ul>
+            <li>مضخات ومضخات غاطسة</li>
+            <li>معدات أمان</li>
+            <li>زلط ورمل</li>
+            <li>أحجار</li>
+            <li>محابس</li>
+            <li>جميع أنواع المعدات والأدوات الميكانيكية</li>
+            <li>مولدات وأدوات وكابلات كهربائية</li>
+            <li>أنابيب ووصلات</li>
+            <li>أي معدات أخرى مطلوبة للأعمال المدنية</li>
+          </ul>
+        </div>
+        <div>
+          <strong>الإنشاءات</strong>
+          <ul>
+            <li>مباني</li>
+            <li>أسوار</li>
+            <li>منازل وفيلات</li>
+            <li>تشطيب جميع أنواع أعمال البناء</li>
+          </ul>
+        </div>
+        <div>
+          <strong>تأجير المعدات الثقيلة</strong>
+          <ul>
+            <li>بلدوزر</li>
+            <li>مدحلة</li>
+            <li>رولر</li>
+            <li>سيارة نقل</li>
+            <li>حفار</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 id="projects-ar">بعض مشاريعنا السابقة</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="images/port-said-station.jpg" alt="محطة كهرباء شرق بورسعيد">
+          <strong>محطة كهرباء شرق بورسعيد</strong><br>
+          التكلفة الإجمالية: 20,235,345 جنيه<br>
+          المقاول الرئيسي: GeOcean (شركة فرنسية)<br>
+          <em>توريدات، حفر، تركيب مواسير، تأجير معدات</em>
+        </div>
+        <div class="project-card">
+          <img src="images/control-building.jpg" alt="مبنى التحكم الآلي">
+          <strong>مبنى التحكم الآلي</strong><br>
+          التكلفة الإجمالية: 9,450,000 جنيه<br>
+          المقاول الرئيسي: شركة الصيانة المصرية<br>
+        </div>
+        <div class="project-card">
+          <img src="images/Pipeline-Rehabilitation-L1.jpg" alt="مشروع بنية تحتية">
+          <strong>مشروع بنية تحتية</strong><br>
+          التكلفة الإجمالية: 21,500,000 جنيه<br>
+          المقاول الرئيسي: شركة الصيانة المصرية<br>
+        </div>
+        <div class="project-card">
+          <img src="images/Pipeline-Rehabilitation-L3.jpg" alt="تأهيل خطوط المواسير">
+          <strong>تأهيل خطوط المواسير</strong><br>
+          التكلفة الإجمالية: 10,714,831 جنيه<br>
+          المقاول الرئيسي: شركة الصيانة المصرية<br>
+        </div>
+        <div class="project-card">
+          <img src="images/GENERAL-adminstartion.jpg" alt="مبنى الإدارة العامة">
+          <strong>مبنى الإدارة العامة</strong><br>
+          التكلفة الإجمالية: 6,158,213 جنيه<br>
+          المقاول الرئيسي: شركة الصيانة المصرية<br>
+        </div>
+      </div>
+
+      <h2 id="org-ar">الهيكل التنظيمي</h2>
+      <div class="org-chart">
+        <img src="images/organization-hierarchy.png" alt="الهيكل التنظيمي">
+      </div>
+
+      <h2 id="values-ar">قيمنا</h2>
+      <div class="values">
+        <div>الشفافية</div>
+        <div>احترام الوقت</div>
+        <div>العمل الجماعي</div>
+        <div>المثابرة</div>
+        <div>الإبداع والابتكار</div>
+      </div>
+
+      <h2 id="contact-ar">تواصل معنا</h2>
+      <form action="https://formspree.io/f/xjkrwvyj" method="post">
+        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+        <textarea name="message" placeholder="رسالتك" required></textarea></label>
+        <button class="btn" type="submit">إرسال</button>
+      </form>
+    </div>
+    <div class="footer">
+      &copy; 2025 إعمار. جميع الحقوق محفوظة.
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
