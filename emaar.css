@@ -33,6 +33,7 @@
     body[dir="rtl"] .container, body[dir="rtl"] .footer { text-align: center; }
     body[dir="rtl"] .logo { margin-left: 40px; margin-right: 48; }
     body[dir="rtl"] .only-english{display: none;}
+    body[dir="rtl"] nav ul  { font-size: 20px;} 
     body[dir="rtl"] .btn1{background: #2060b4; color: #fff; padding: 0.7em 0.5em; border: none; border-radius: 5px; margin: 0.5em; cursor: pointer; font-size: 1em;}
     body[dir="ltr"] .only-arabic{display: none;}
     body[dir="ltr"] .btn1{display: none;}
